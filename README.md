@@ -17,7 +17,7 @@ https://docs.docker.com/engine/installation/linux/linux-postinstall/
 
 https://docs.docker.com/compose/install/
 
-OPTIONAL: add this alias to the end of your `~/.bashrc` file, to deal with file ownership issues: `alias railz='sudo chown -R $USER:$USER .; docker-compose run web rails'`
+OPTIONAL: add this alias to the end of your `~/.bashrc` file, to deal with file ownership issues: `railz() { docker-compose run web rails $@; sudo chown -R $USER:$USER .; }`
 
 ### Windows/Mac
 
